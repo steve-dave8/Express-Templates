@@ -6,6 +6,7 @@ import cors from "cors";
 import mongoose from 'mongoose';
 // Routes:
 import sampleCrudRoutes from "./src/routes/crud-template.js";
+import sampleUserRoutes from "./src/routes/users-template.js";
 
 // Connect to the database:
 const dbPort = process.env.DB_PORT || 27017;
@@ -21,6 +22,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", sampleCrudRoutes);
+app.use("/", sampleUserRoutes);
 
 // Global error handler:
 app.use((err, req, res, next) => {

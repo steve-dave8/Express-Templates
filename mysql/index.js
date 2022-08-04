@@ -4,13 +4,15 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 // Routes:
-import sampleRoutes from "./src/routes/routeTemplate.js"
+import sampleCrudRoutes from "./src/routes/crud-template.js";
+import sampleUserRoutes from "./src/routes/users-template.js";
 
 // App setup:
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", sampleRoutes);
+app.use("/", sampleCrudRoutes);
+app.use("/", sampleUserRoutes);
 
 // Global error handler:
 app.use((err, req, res, next) => {
