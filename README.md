@@ -4,7 +4,9 @@
 
 Templates for using Express with different databases. 
 
-Usage: from your command line, after cloning this repo, change directory to the folder you're interested in, run `npm install`, add a `.env` file to the folder with relevant variables added (details below).
+Usage: from your command line, after cloning this repo, change directory to the folder you're interested in, run `npm install`, add a `.env` file to the folder with relevant variables added (details below), and `npm start` or `npm run dev` to start the application. 
+
+Note that no validation is included in these templates and a database would need to be setup beforehand.
 
 ### MySQL
 
@@ -31,3 +33,15 @@ DB_NAME=example_db
 JWT_SECRET=password
 ```
 Optional environment variables: `PORT`, `DB_PORT`
+
+### Filesystem
+
+Uses Node's built-in `fs` module. Not a database but it's a way of managing data so I decided to include a template for it.
+
+Sample `.env` file:
+```
+DATA_ITEMS_LOCATION=./data/items.json
+DATA_USERS_LOCATION=./data/users.json
+JWT_SECRET=password
+```
+Optional environment variable: `PORT`
