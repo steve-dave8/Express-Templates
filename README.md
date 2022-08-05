@@ -2,11 +2,13 @@
 
 ## Description 
 
-Templates for using Express with different databases. 
+Templates for using Express with different databases. Covers basic CRUD functions, user creation with hashed passwords, and user login with a JSON Web Token returned.
 
-Usage: from your command line, after cloning this repo, change directory to the folder you're interested in, run `npm install`, add a `.env` file to the folder with relevant variables added (details below), and `npm start` or `npm run dev` to start the application. 
+## Usage
 
-Note that no validation is included in these templates and a database would need to be setup beforehand.
+From your command line, after cloning this repo, change directory to the folder you're interested in, run `npm install`, add a `.env` file to the folder with relevant variables added (details below), and `npm start` or `npm run dev` to start the application. 
+
+Note that minimal validation is included in these templates and a database would need to be setup beforehand.
 
 ### MySQL
 
